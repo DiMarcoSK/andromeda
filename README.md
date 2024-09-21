@@ -5,7 +5,7 @@ commiting changes in new branches only to test the pipeline (Or if you want to i
 
 ## Requirements
 - Go (v1.16+)
-- Kubernets (To run tasks in pods)
+- Docker (To run tasks in containers)
 
 ## Customization
 You can configure the pipeline by editing the `.gitlab-ci.yml` or `name-of-the-workflow.yml` file, defining the stages like `build`, `test`, and `deploy`. Andromeda will handle the execution of each stage in the correct order.
