@@ -12,12 +12,10 @@ lint:
   stage: lint
   script:
     - flake8 .
+    - flake8 --max-line-length=88 --max-complexity=10 .
 
   variables:
     FLAKE8_MAX_COMPLEXITY: 10
     FLAKE8_MAX_LINE_LENGTH: 88
 
   allow_failure: false
-
-  script:
-    - flake8 --max-line-length=88 --max-complexity=10 .
